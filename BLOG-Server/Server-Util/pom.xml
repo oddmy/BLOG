@@ -3,19 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>BLOG</artifactId>
-        <groupId>com.oddmy.blog</groupId>
+        <artifactId>BLOG-Server</artifactId>
+        <groupId>com.oddmy.blog.server</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.oddmy.blog.server</groupId>
-    <artifactId>BLOG-Server</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>Server-User</module>
-        <module>Server-Article</module>
-        <module>Server-Util</module>
-    </modules>
+    <groupId>com.oddmy.blog.server.util</groupId>
+    <artifactId>Server-Util</artifactId>
+
 
 </project>
