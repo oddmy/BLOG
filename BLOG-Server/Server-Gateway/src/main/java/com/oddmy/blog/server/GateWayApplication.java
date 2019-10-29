@@ -4,15 +4,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * 项目启动类
+ * TODO description
  *
  * @author fish
- * @date 2019/10/28 17:42
+ * @date 2019/10/29 10:02
  */
 @SpringBootApplication
-public class ServerUserApplication {
+public class GateWayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServerUserApplication.class, args);
+        SpringApplication.run(GateWayApplication.class, args);
     }
 }
