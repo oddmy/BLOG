@@ -1,6 +1,6 @@
 # blog-manage
 
-> This is my blog background management page project
+> This is manage project
 
 ## Build Setup
 

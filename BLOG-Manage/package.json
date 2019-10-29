@@ -1,7 +1,7 @@
 {
   "name": "blog-manage",
   "version": "1.0.0",
-  "description": "This is my blog background management page project",
+  "description": "This is manage project",
   "author": "xiaoyu <991607476@qq.com>",
   "private": true,
   "scripts": {
@@ -10,8 +10,6 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "eme": "^1.1.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -27,7 +25,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^3.2.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
@@ -43,11 +41,13 @@
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
-    "url-loader": "^0.5.8",
+    "url-loader": "^2.2.0",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
