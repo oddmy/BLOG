@@ -17,6 +17,7 @@
         <module>Server-Article</module>
         <module>Server-Util</module>
         <module>Server-Gateway</module>
+        <module>Server-Manage</module>
     </modules>
 
 </project>
