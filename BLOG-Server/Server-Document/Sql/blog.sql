@@ -15,8 +15,8 @@ CREATE TABLE `user` (
   KEY `key_user_name` (`user_name`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=10000 DEFAULT CHARSET=utf8 COMMENT='用户表';
 
-CREATE TABLE `Group` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '用户id',
+CREATE TABLE `group` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '用户组id',
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '数据创建时间',
   `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据更新时间',
   `parent_id` bigint(20) NOT NULL COMMENT '所属用户组',
@@ -25,4 +25,16 @@ CREATE TABLE `Group` (
   `enabled` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0.禁用 1.启用',
   PRIMARY KEY (`id`),
   KEY `key_parent_id` (`parent_id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户组表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户组表');;
+
+CREATE TABLE `group` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '角色id',
+  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '数据创建时间',
+  `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据更新时间',
+  `parent_id` bigint(20) NOT NULL COMMENT '所属角色',
+  `name` varchar(255) NOT NULL COMMENT '角色名称',
+  `description` varchar(255) NOT NULL COMMENT '角色描述',
+  `enabled` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0.禁用 1.启用',
+  PRIMARY KEY (`id`),
+  KEY `key_parent_id` (`parent_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='角色组表';
